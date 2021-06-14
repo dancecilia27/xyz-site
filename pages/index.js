@@ -1,82 +1,180 @@
-import Head from 'next/head'
-
+import Head from "next/head";
+import Link from "next/link";
+import Image from "next/image";
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
+    <div className="bg-purple-900">
       <Head>
-        <title>Create Next App</title>
+        <title>.XYZ - Web3.0 & dApp development</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
-        </h1>
+      <div className="h-12 bg-purple-800 flex justify-between">
+        <a href="#" className="">
+          <Image width="96" height="36" src="/static/xyz_nav_logo.svg" />
+        </a>
+        <nav>
+          <Link href="/about">About</Link>
 
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="p-3 font-mono text-lg bg-gray-100 rounded-md">
-            pages/index.js
-          </code>
-        </p>
+          <Link href="/blog">Blog</Link>
+          <a>Discord</a>
+        </nav>
+      </div>
 
-        <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and API.
-            </p>
-          </a>
+      <main className="container ">
+        <div>
+          <div className="w-screen h-screen bg-hero bg-no-repeat bg-cover flex items-center">
+            <div>
+              <h2 className="text-5xl font-extabold text-left bg-gray-900 bg-opacity-70 text-white">
+                We build applications for Web 3.0
+              </h2>
+              <p className="font-medium text-xl text-left bg-gray-900 bg-opacity-70 text-white">
+                Peer to peer application development doesn’t have to be
+                complicated. Let our team of distributed systems experts build
+                your vision.
+              </p>
+            </div>
+          </div>
 
-          <a
-            href="https://nextjs.org/learn"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
-            </p>
-          </a>
+          <div className="bg-purple-900 ">
+            <h3 className="text-5xl font-extrabold underline text-white text-bold flex justify-center items-center p-8">
+              WHAT DO YOU NEED?
+            </h3>
+            <div className="container flex justify-around p p-8">
+              <div>
+                <Image src="/static/X.png" width="160" height="160" />
+                <p>Reliable Blockchain Developers</p>
+              </div>
+              <div>
+                <Image src="/static/Y.png" width="160" height="160" />
+                <p>dApp Product Development</p>
+              </div>
+              <div>
+                <Image src="/static/Z.png" width="160" height="160" />
+                <p>DeFi Advisory </p>
+              </div>
+            </div>
+          </div>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
+          <div className="w-screen">
+            <h3 className="text-5xl font-extrabold text-white flex justify-center items-center bg-gray-800 p-8 w-full">LATEST CLIENTS</h3>
+            <div className="bg-fractal-pattern bg-no-repeat bg-cover w-full">
+              <div className="h-96">
+                <a href="#" className="relative w-6 h-auto">
+                  <Image
+                    layout="fill"
+                    objectFit="cover"
+                    sizes="100%"
+                    src="/static/client_koI.svg"
+                    
+                  />
+                </a>
 
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+                <a href="#" className="relative w-6 h-auto">
+                  <Image
+                    layout="fill"
+                    objectFit="cover"
+                    sizes="100%"
+                    src="/static/client_key.svg"
+                    
+                  />
+                </a>
+              </div>
+              <a className="btn x-btn-became"></a>
+            </div>
+          </div>
         </div>
       </main>
 
-      <footer className="flex items-center justify-center w-full h-24 border-t">
-        <a
-          className="flex items-center justify-center"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="h-4 ml-2" />
-        </a>
-      </footer>
+      {/* <footer>
+        <div>
+          <Image
+            src="/xyz_nav_logo.svg"
+            alt=".xyz logo"
+            width="218"
+            height="83"
+          />
+          <div>
+            <a href="">Discord</a>
+            <a href="">Email</a>
+            <a href="">Telegram</a>
+          </div>
+        </div>
+
+        <br />
+
+        <div class="info-links">
+          <ul class="nav x-footer-contact about-links">
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                Company
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                About
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                Team
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                Mission
+              </a>
+            </li>
+          </ul>
+
+          <div class="footer-emails">
+            <ul class="nav flex-column x-footer-contact">
+              <li class="nav-item">
+                <h3 class="contact-title nav-link" style="color: #3acebc">
+                  Contact Us
+                </h3>
+              </li>
+
+              <li class="nav-item email">
+                <a href="mailto:hello@tech.nology.xyz" class="nav-link">
+                  hello@tech.nology.xyz
+                </a>
+              </li>
+
+              <li class="nav-item email">
+                <a href="mailto:solutions@tech.nology.xyz" class="nav-link">
+                  solutions@tech.nology.xyz
+                </a>
+              </li>
+
+              <li class="nav-item email">
+                <a href="mailto:developer@tech.nology.xyz" class="nav-link">
+                  developer@tech.nology.xyz
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-emails email">
+            <ul class="nav flex-column x-footer-contact">
+              <li class="nav-item">
+                <a href="mailto:defi@tech.nology.xyz" class="nav-link">
+                  defi@tech.nology.xyz
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="mailto:jobs@tech.nology.xyz" class="nav-link">
+                  jobs@tech.nology.xyz
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="mailto:press@tech.nology.xyz" class="nav-link">
+                  press@tech.nology.xyz
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer> */}
     </div>
-  )
+  );
 }
