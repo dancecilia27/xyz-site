@@ -36,8 +36,8 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="bg-purple-900 ">
-            <h3 className="text-5xl font-extrabold underline text-white text-bold flex justify-center items-center p-8">
+          <div className="bg-purple-900 w-screen">
+            <h3 className="text-5xl font-extrabold underline text-white text-bold flex  w-full justify-center items-center p-8">
               WHAT DO YOU NEED?
             </h3>
             <div className="container flex justify-around p p-8">
@@ -58,123 +58,128 @@ export default function Home() {
 
           <div className="w-screen">
             <h3 className="text-5xl font-extrabold text-white flex justify-center items-center bg-gray-800 p-8 w-full">LATEST CLIENTS</h3>
-            <div className="bg-fractal-pattern bg-no-repeat bg-cover w-full">
-              <div className="h-96">
+            
+            <div className="bg-fractal-pattern bg-no-repeat bg-cover bg-center w-full flex-col justify-center " >
+              <div className=" w-full">
                 <a href="#" className="relative w-6 h-auto">
                   <Image
-                    layout="fill"
-                    objectFit="cover"
-                    sizes="100%"
+                    width="640"
+                    height="auto"
                     src="/static/client_koI.svg"
                     
                   />
                 </a>
-
-                <a href="#" className="relative w-6 h-auto">
-                  <Image
-                    layout="fill"
-                    objectFit="cover"
-                    sizes="100%"
-                    src="/static/client_key.svg"
-                    
-                  />
-                </a>
               </div>
-              <a className="btn x-btn-became"></a>
+              
+              <a className="relative">
+                <Image
+                width="640"
+                height="auto"
+                src="/static/btn-become.png"
+                />
+              </a>
+
             </div>
           </div>
         </div>
       </main>
 
-      {/* <footer>
+      <footer>
         <div>
-          <Image
-            src="/xyz_nav_logo.svg"
+        <div className="flex">
+          <div className="p-8">
+             <Image
+            src="/static/xyz_nav_logo.svg"
             alt=".xyz logo"
             width="218"
             height="83"
+            
           />
-          <div>
+          </div>
+         
+          <div className="flex justify-around">
             <a href="">Discord</a>
             <a href="">Email</a>
             <a href="">Telegram</a>
           </div>
         </div>
+        </div>
+        
 
-        <br />
+      
 
-        <div class="info-links">
-          <ul class="nav x-footer-contact about-links">
-            <li class="nav-item">
-              <a href="#" class="nav-link">
+        <div className="flex items-end p-8" >
+          <ul className="flex-col">
+            <li className="text-white text-lg p-4 text-left font-extrabold">
+              <a href="#" className="nav-link">
                 Company
               </a>
             </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">
+            <li className="text-white text-lg p-4 text-left font-extrabold">
+              <a href="#" className="nav-link">
                 About
               </a>
             </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">
+            <li className="text-white text-lg p-4 text-left font-extrabold">
+              <a href="#" className="nav-link">
                 Team
               </a>
             </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">
+            <li className="text-white text-lg p-4 text-left font-extrabold">
+              <a href="#" className="nav-link">
                 Mission
               </a>
             </li>
           </ul>
 
-          <div class="footer-emails">
-            <ul class="nav flex-column x-footer-contact">
-              <li class="nav-item">
-                <h3 class="contact-title nav-link" style="color: #3acebc">
-                  Contact Us
+          <div className="footer-emails">
+            <ul className="nav flex-column x-footer-contact">
+              <li className="nav-item">
+                <h3 className="text-green-400 font-extrabold">
+                  Contact Us:
                 </h3>
               </li>
 
-              <li class="nav-item email">
-                <a href="mailto:hello@tech.nology.xyz" class="nav-link">
+              <li className="text-white text-lg p-4 text-left">
+                <a href="mailto:hello@tech.nology.xyz" className="nav-link">
                   hello@tech.nology.xyz
                 </a>
               </li>
 
-              <li class="nav-item email">
-                <a href="mailto:solutions@tech.nology.xyz" class="nav-link">
+              <li className="text-white text-lg p-4 text-left">
+                <a href="mailto:solutions@tech.nology.xyz" className="nav-link">
                   solutions@tech.nology.xyz
                 </a>
               </li>
 
-              <li class="nav-item email">
-                <a href="mailto:developer@tech.nology.xyz" class="nav-link">
+              <li className="text-white text-lg p-4 text-left">
+                <a href="mailto:developer@tech.nology.xyz" className="nav-link">
                   developer@tech.nology.xyz
                 </a>
               </li>
             </ul>
           </div>
-          <div class="footer-emails email">
-            <ul class="nav flex-column x-footer-contact">
-              <li class="nav-item">
-                <a href="mailto:defi@tech.nology.xyz" class="nav-link">
+          <div className="flex">
+            <ul className="flex-col justify-end block">
+              <li className="text-white text-lg p-4 text-left">
+                <a href="mailto:defi@tech.nology.xyz" className=" ">
                   defi@tech.nology.xyz
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="mailto:jobs@tech.nology.xyz" class="nav-link">
+              <li className="text-white text-lg p-4 text-left">
+                <a href="mailto:jobs@tech.nology.xyz" className="nav-link">
                   jobs@tech.nology.xyz
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="mailto:press@tech.nology.xyz" class="nav-link">
+              <li className="text-white text-lg p-4 text-left">
+                <a href="mailto:press@tech.nology.xyz" className="nav-link">
                   press@tech.nology.xyz
                 </a>
               </li>
             </ul>
           </div>
         </div>
-      </footer> */}
+      </footer>
     </div>
   );
 }
