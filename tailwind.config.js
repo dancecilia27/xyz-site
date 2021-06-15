@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: theme => ({
-
+        
         'nav-gradient': "url('/static/background/nav-bkg.png')",
         'hero': "url('/static/background/sec_01_bkg.jpg')",
         'fractal-pattern': "url('/static/background/metaverse.svg')"

@@ -65,13 +65,14 @@ export default function Home() {
             </h3>
 
             <div className="bg-fractal-pattern bg-no-repeat bg-cover bg-center flex-col justify-center items-center ">
-              <div className="w-full flex justify-center">
+              <div className="w-full ">
 
-                <a href="#" className="relative w-6 h-auto  ">
+                <a href="#" className=" w-6 h-auto m-auto ">
                   <Image
                     width="540"
                     height="auto"
                     src="/static/client_koI.svg"
+                   
                   />
                 </a>
               </div>

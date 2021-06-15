@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 const navbar = () => {
   return (
-    <div className="w-screen bg-purple-800 flex justify-between items-center p-8">
+    <div className="w-screen flex justify-between items-center p-6 bg-gradient-to-r from-purple-500 via-black to-green-400">
 
       <a href="#" className="">
         <Image width="96" height="36" src="/static/xyz_nav_logo.svg" />
@@ -22,7 +22,7 @@ const navbar = () => {
       </button>
 
       
-      <nav className="flex space-x-8  hidden">
+      <nav className="lg:flex space-x-8  hidden">
         <div className="px-4 font-bold text-white text-4xl hover:bg-purple-700 rounded-xl">
           <Link href="/about">About</Link>
         </div>
@@ -31,7 +31,7 @@ const navbar = () => {
           <Link href="/blog">Blog</Link>
         </div>
 
-        <a className="px-4 font-bold text-white text-4xl hover:bg-purple-700 rounded-xl">
+        <a href="" target="_blank" className="px-4 font-bold text-white text-4xl hover:bg-purple-700 rounded-xl">
           Discord
         </a>
       </nav>
