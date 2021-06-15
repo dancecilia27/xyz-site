@@ -4,12 +4,12 @@ import Footer from "./componets/footer";
 
 const About = () => {
   return (
-    <div>
+      <div>
       <Navbar />
 
       <Footer />
     </div>
-  );
-};
+  )
+}
 
-return About;
+export default About;
