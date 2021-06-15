@@ -1,30 +1,16 @@
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
+import Navbar from "./componets/navbar";
+import Footer from "./componets/footer";
 export default function Home() {
   return (
     <div className="bg-purple-900">
+      <Navbar />
       <Head>
         <title>.XYZ - Web3.0 & dApp development</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <div className=" bg-purple-800 flex justify-between items-center w-screen p-8">
-        <a href="#" className="">
-          <Image width="96" height="36" src="/static/xyz_nav_logo.svg" />
-        </a>
-        <nav className="flex space-x-8">
-          <div className="px-4 font-bold text-white text-4xl">
-            <Link href="/about">About</Link>
-          </div>
-
-          <div className="px-4 font-bold text-white text-4xl">
-            <Link href="/blog">Blog</Link>
-          </div>
-
-          <a className="px-4 font-bold text-white text-4xl">Discord</a>
-        </nav>
-      </div>
 
       <main className="container ">
         <div>
@@ -84,97 +70,7 @@ export default function Home() {
           </div>
         </div>
       </main>
-
-      <footer>
-        <div>
-          <div className="flex">
-            <div className="p-6">
-              <Image
-                src="/static/xyz_nav_logo.svg"
-                alt=".xyz logo"
-                width="218"
-                height="83"
-              />
-            </div>
-
-            <div className="flex justify-around">
-              <a href="">Discord</a>
-              <a href="">Email</a>
-              <a href="">Telegram</a>
-            </div>
-          </div>
-        </div>
-
-        <div className="flex items-end p-6">
-          <ul className="flex-col">
-            <li className="text-white text-lg p-4 text-left font-extrabold">
-              <a href="#" className="nav-link">
-                Company
-              </a>
-            </li>
-            <li className="text-white text-lg p-4 text-left font-extrabold">
-              <a href="#" className="nav-link">
-                About
-              </a>
-            </li>
-            <li className="text-white text-lg p-4 text-left font-extrabold">
-              <a href="#" className="nav-link">
-                Team
-              </a>
-            </li>
-            <li className="text-white text-lg p-4 text-left font-extrabold">
-              <a href="#" className="nav-link">
-                Mission
-              </a>
-            </li>
-          </ul>
-
-          <div className="footer-emails">
-            <ul className="nav flex-column x-footer-contact">
-              <li className=" text-lg p-4 text-left">
-                <h3 className="text-green-400 font-extrabold">Contact Us:</h3>
-              </li>
-
-              <li className="text-white text-lg p-4 text-left">
-                <a href="mailto:hello@tech.nology.xyz" className="nav-link">
-                  hello@tech.nology.xyz
-                </a>
-              </li>
-
-              <li className="text-white text-lg p-4 text-left">
-                <a href="mailto:solutions@tech.nology.xyz" className="nav-link">
-                  solutions@tech.nology.xyz
-                </a>
-              </li>
-
-              <li className="text-white text-lg p-4 text-left">
-                <a href="mailto:developer@tech.nology.xyz" className="nav-link">
-                  developer@tech.nology.xyz
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div className="flex">
-            <ul className="flex-col justify-end block">
-              <li className="text-white text-lg p-4 text-left">
-                <a href="mailto:defi@tech.nology.xyz" className=" ">
-                  defi@tech.nology.xyz
-                </a>
-              </li>
-              <li className="text-white text-lg p-4 text-left">
-                <a href="mailto:jobs@tech.nology.xyz" className="nav-link">
-                  jobs@tech.nology.xyz
-                </a>
-              </li>
-              <li className="text-white text-lg p-4 text-left">
-                <a href="mailto:press@tech.nology.xyz" className="nav-link">
-                  press@tech.nology.xyz
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

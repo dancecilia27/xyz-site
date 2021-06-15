@@ -1,12 +1,13 @@
-import React, { Children } from 'react'
+import React  from 'react'
+import Navbar from './navbar'
 import Footer from './footer'
-import Layout from "./footer"
-const Layout = () => {
+
+export default function Layout({Children}) {
     return (
-        <div>
+        <div className="bg-purple-900">
+            <Navbar/>
             {Children}
             <Footer/>
         </div>
     )
 }
-export default Layout

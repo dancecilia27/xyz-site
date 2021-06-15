@@ -1,12 +1,12 @@
 import React from 'react'
 
-
+import Image from "next/image"
 const Footer= ()=>{
     return (
         <footer>
         <div>
-          <div className="flex">
-            <div className="p-6">
+          <div className="flex p-6">
+            <div className="p-4">
               <Image
                 src="/static/xyz_nav_logo.svg"
                 alt=".xyz logo"
@@ -48,7 +48,7 @@ const Footer= ()=>{
           </ul>
 
           <div className="footer-emails">
-            <ul className="nav flex-column x-footer-contact">
+            <ul className="nav flex-column ">
               <li className=" text-lg p-4 text-left">
                 <h3 className="text-green-400 font-extrabold">Contact Us:</h3>
               </li>
