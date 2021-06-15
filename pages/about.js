@@ -12,4 +12,3 @@ const About = () => {
   );
 };
 
-return About;

@@ -16,10 +16,10 @@ export default function Home() {
         <div>
           <div className="w-screen h-screen bg-hero bg-no-repeat bg-cover flex items-center">
             <div>
-              <h2 className="text-5xl font-extabold text-left bg-gray-900 bg-opacity-70 text-white">
+              <h2 className="text-5xl font-extabold text-left text-white p-8 sm:bg-transparent lg:bg-gray-900 lg:bg-opacity-70 ">
                 We build applications for Web 3.0
               </h2>
-              <p className="font-medium text-xl text-left bg-gray-900 bg-opacity-70 text-white">
+              <p className="font-medium text-xl text-left bg-gray-900 bg-opacity-70 text-white p-8">
                 Peer to peer application development doesn’t have to be
                 complicated. Let our team of distributed systems experts build
                 your vision.
@@ -28,35 +28,39 @@ export default function Home() {
           </div>
 
           <div className="bg-purple-900 w-screen">
-            <h3 className="text-5xl font-extrabold underline text-white text-bold flex  w-full justify-center items-center p-8">
+            <h3 className="lg:text-5xl sm:text-2xl font-extrabold underline text-white text-bold flex  w-full justify-center items-center p-8">
               WHAT DO YOU NEED?
             </h3>
-            <div className="container flex justify-around p p-8">
-              <div>
+            <div className="container lg:flex sm:flex-col sm:items-center justify-around p p-8">
+              <div className="flex-col items-center justify-center w-full">
                 <Image src="/static/X.png" width="160" height="160" />
-                <p>Reliable Blockchain Developers</p>
+                <p className="text-white text-bold text-lg">
+                  Reliable Blockchain Developers
+                </p>
               </div>
-              <div>
+              <div className="flex-col items-center justify-center w-full">
                 <Image src="/static/Y.png" width="160" height="160" />
-                <p>dApp Product Development</p>
+                <p className="text-white text-bold text-lg">
+                  dApp Product Development
+                </p>
               </div>
-              <div>
+              <div className="flex-col items-center justify-center w-full">
                 <Image src="/static/Z.png" width="160" height="160" />
-                <p>DeFi Advisory </p>
+                <p className="text-white text-bold text-lg">DeFi Advisory </p>
               </div>
             </div>
           </div>
 
           <div className="w-screen">
-            <h3 className="text-5xl font-extrabold text-white flex justify-center items-center bg-gray-800 p-8 w-full">
+            <h3 className="lg:text-5xl sm:text-2xl font-extrabold text-white flex justify-center items-center bg-gray-800 p-8 w-full">
               LATEST CLIENTS
             </h3>
 
             <div className="bg-fractal-pattern bg-no-repeat bg-cover bg-center w-full flex-col justify-center ">
-              <div className=" w-full">
+              <div className="w-full max-w-3/5">
                 <a href="#" className="relative w-6 h-auto">
                   <Image
-                    width="640"
+                    width="540"
                     height="auto"
                     src="/static/client_koI.svg"
                   />
@@ -64,7 +68,7 @@ export default function Home() {
               </div>
 
               <a className="relative">
-                <Image width="640" height="auto" src="/static/btn-become.png" />
+                <Image width="540" height="auto" src="/static/btn-become.png" />
               </a>
             </div>
           </div>
