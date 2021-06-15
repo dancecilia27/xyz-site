@@ -31,22 +31,30 @@ export default function Home() {
             <h3 className="lg:text-5xl sm:text-2xl font-extrabold underline text-white text-bold flex  w-full justify-center items-center p-8">
               WHAT DO YOU NEED?
             </h3>
-            <div className="container lg:flex sm:flex-col sm:items-center justify-around p p-8">
-              <div className="flex-col items-center justify-center w-full">
+            <div className="sm:flex-col lg:flex lg:flex-row items-center justify-around  p-8">
+              <div className="lg:flex-col items-center justify-center w-full">
+                <div className="flex justify-center">
                 <Image src="/static/X.png" width="160" height="160" />
-                <p className="text-white text-bold text-lg">
+                </div>
+                
+                <p className="text-white text-bold text-lg text-center">
                   Reliable Blockchain Developers
                 </p>
               </div>
               <div className="flex-col items-center justify-center w-full">
+              <div className="flex justify-center">
                 <Image src="/static/Y.png" width="160" height="160" />
-                <p className="text-white text-bold text-lg">
+              </div>
+                <p className="text-white text-bold text-lg text-center">
                   dApp Product Development
                 </p>
               </div>
-              <div className="flex-col items-center justify-center w-full">
-                <Image src="/static/Z.png" width="160" height="160" />
-                <p className="text-white text-bold text-lg">DeFi Advisory </p>
+              <div className="flex-col items-center justify-center w-full ">
+                <div className="flex justify-center">
+                  <Image src="/static/Z.png" width="160" height="160" />
+                </div>
+                
+                <p className="text-white text-bold text-lg text-center">DeFi Advisory </p>
               </div>
             </div>
           </div>
@@ -56,9 +64,10 @@ export default function Home() {
               LATEST CLIENTS
             </h3>
 
-            <div className="bg-fractal-pattern bg-no-repeat bg-cover bg-center w-full flex-col justify-center ">
-              <div className="w-full max-w-3/5">
-                <a href="#" className="relative w-6 h-auto">
+            <div className="bg-fractal-pattern bg-no-repeat bg-cover bg-center flex-col justify-center items-center ">
+              <div className="w-full flex justify-center">
+
+                <a href="#" className="relative w-6 h-auto  ">
                   <Image
                     width="540"
                     height="auto"

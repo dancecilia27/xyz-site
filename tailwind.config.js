@@ -11,6 +11,7 @@ module.exports = {
         'fractal-pattern': "url('/static/background/metaverse.svg')"
        })
     },
+   
   },
   variants: {
     extend: {},
