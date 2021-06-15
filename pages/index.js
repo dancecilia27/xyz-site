@@ -9,15 +9,20 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="h-12 bg-purple-800 flex justify-between">
+      <div className=" bg-purple-800 flex justify-between items-center w-screen p-8">
         <a href="#" className="">
           <Image width="96" height="36" src="/static/xyz_nav_logo.svg" />
         </a>
-        <nav>
-          <Link href="/about">About</Link>
+        <nav className="flex space-x-8">
+          <div className="px-4 font-bold text-white text-4xl">
+            <Link href="/about">About</Link>
+          </div>
 
-          <Link href="/blog">Blog</Link>
-          <a>Discord</a>
+          <div className="px-4 font-bold text-white text-4xl">
+            <Link href="/blog">Blog</Link>
+          </div>
+
+          <a className="px-4 font-bold text-white text-4xl">Discord</a>
         </nav>
       </div>
 
@@ -57,28 +62,24 @@ export default function Home() {
           </div>
 
           <div className="w-screen">
-            <h3 className="text-5xl font-extrabold text-white flex justify-center items-center bg-gray-800 p-8 w-full">LATEST CLIENTS</h3>
-            
-            <div className="bg-fractal-pattern bg-no-repeat bg-cover bg-center w-full flex-col justify-center " >
+            <h3 className="text-5xl font-extrabold text-white flex justify-center items-center bg-gray-800 p-8 w-full">
+              LATEST CLIENTS
+            </h3>
+
+            <div className="bg-fractal-pattern bg-no-repeat bg-cover bg-center w-full flex-col justify-center ">
               <div className=" w-full">
                 <a href="#" className="relative w-6 h-auto">
                   <Image
                     width="640"
                     height="auto"
                     src="/static/client_koI.svg"
-                    
                   />
                 </a>
               </div>
-              
-              <a className="relative">
-                <Image
-                width="640"
-                height="auto"
-                src="/static/btn-become.png"
-                />
-              </a>
 
+              <a className="relative">
+                <Image width="640" height="auto" src="/static/btn-become.png" />
+              </a>
             </div>
           </div>
         </div>
@@ -86,29 +87,25 @@ export default function Home() {
 
       <footer>
         <div>
-        <div className="flex">
-          <div className="p-8">
-             <Image
-            src="/static/xyz_nav_logo.svg"
-            alt=".xyz logo"
-            width="218"
-            height="83"
-            
-          />
-          </div>
-         
-          <div className="flex justify-around">
-            <a href="">Discord</a>
-            <a href="">Email</a>
-            <a href="">Telegram</a>
+          <div className="flex">
+            <div className="p-6">
+              <Image
+                src="/static/xyz_nav_logo.svg"
+                alt=".xyz logo"
+                width="218"
+                height="83"
+              />
+            </div>
+
+            <div className="flex justify-around">
+              <a href="">Discord</a>
+              <a href="">Email</a>
+              <a href="">Telegram</a>
+            </div>
           </div>
         </div>
-        </div>
-        
 
-      
-
-        <div className="flex items-end p-8" >
+        <div className="flex items-end p-6">
           <ul className="flex-col">
             <li className="text-white text-lg p-4 text-left font-extrabold">
               <a href="#" className="nav-link">
@@ -134,10 +131,8 @@ export default function Home() {
 
           <div className="footer-emails">
             <ul className="nav flex-column x-footer-contact">
-              <li className="nav-item">
-                <h3 className="text-green-400 font-extrabold">
-                  Contact Us:
-                </h3>
+              <li className=" text-lg p-4 text-left">
+                <h3 className="text-green-400 font-extrabold">Contact Us:</h3>
               </li>
 
               <li className="text-white text-lg p-4 text-left">
